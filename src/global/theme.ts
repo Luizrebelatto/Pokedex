@@ -66,5 +66,11 @@ export default {
     light: '#99CD7C',
     normal: '#57B2DC',
     heavy: '#5A92A5'
+  },
+
+  fonts: {
+    regular: 'Inter_400Regular',
+    medium: 'Inter_500Medium',
+    bold: 'Inter_700Bold'
   }
 }
