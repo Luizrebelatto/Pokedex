@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Card } from '../../components/Card';
+
 import { Wrapper, Title, Instructions, InputView, Icon, TextInput } from './styles';
 
 export function Home(){
@@ -12,6 +14,8 @@ export function Home(){
         <Icon name="search"/>
         <TextInput>What Pokemon are you looking for?</TextInput>
       </InputView>
+
+      <Card/>
     </Wrapper>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Wrapper, TextId, Name, ViewBagde, TextTitle } from './styles';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import Pattern from '../../assets/Pattern.svg';
 import Pokeball from '../../assets/Pokeball-Gradient.svg';
 import Bulbassauro from '../../assets/01.svg';
@@ -26,9 +26,9 @@ export function Card(){
         <Pokeball/>
         
       </View>
-      <View style={{position:'absolute', marginLeft:'52%'}}>
+      <View style={{position:'absolute', right: 8, bottom: 8}}>
           <Bulbassauro/>
-        </View>
+      </View>
     </Wrapper>
   )
 }

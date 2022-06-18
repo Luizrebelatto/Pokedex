@@ -26,6 +26,7 @@ export const InputView = styled.View`
   background-color: ${({ theme }) => theme.background.default_input};
   align-items: center;
   justify-content: center;
+  margin-bottom: 45px;
 `;
 
 export const Icon = styled(FontAwesome5)`
