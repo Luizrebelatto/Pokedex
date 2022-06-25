@@ -33,3 +33,20 @@ export const TextTitle = styled(PokemonType)`
   padding-left: 5px;
   color: white;
 `;
+
+export const PokemonImage = styled.View`
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+`;
+
+export const Content = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+`;
+
+export const Header = styled.View`
+  flex-direction: row;
+  margin-top: 5px;
+`;

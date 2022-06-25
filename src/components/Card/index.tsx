@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Wrapper, TextId, Name, ViewBagde, TextTitle } from './styles';
+import { Wrapper, TextId, Name, ViewBagde, TextTitle, PokemonImage, Content, Header } from './styles';
 import { View } from 'react-native';
+
 import Pattern from '../../assets/Pattern.svg';
 import Pokeball from '../../assets/Pokeball-Gradient.svg';
 import Bulbassauro from '../../assets/01.svg';
@@ -9,14 +10,15 @@ import Bulbassauro from '../../assets/01.svg';
 import Bug from '../../assets/types/Bug.svg'
 
 export function Card(){
-  return(
+  return (
     <Wrapper>
-      <View style={{flexDirection: 'row', justifyContent:'space-between', marginLeft:20}}>
+
+      <Content>
         <View>
-          <View style={{flexDirection: 'row', marginTop: 5}}>
+          <Header>
             <TextId>#001</TextId>
             <Pattern/>
-          </View>
+          </Header>
           <Name>Bulbassaur</Name>
           <ViewBagde>
             <Bug width={14} height={14}/>
@@ -24,11 +26,11 @@ export function Card(){
           </ViewBagde>
         </View>
         <Pokeball/>
-        
-      </View>
-      <View style={{position:'absolute', right: 8, bottom: 8}}>
+      </Content>
+
+      <PokemonImage>
           <Bulbassauro/>
-      </View>
+      </PokemonImage>
     </Wrapper>
   )
 }
